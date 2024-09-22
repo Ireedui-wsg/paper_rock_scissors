@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>rock, paper, scissors</title>
+		<style>
+			body{
+				background-color:blue;
+				display:flex;
+				justify-content:center;
+				aling-items:center;
+				height:90vh;
+			}
+			img{
+				cursor:pointer;
+				width:32%;
+			}
+			.game{
+				background-color:#fff;
+				width:600px;
+				padding:15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="game">
+			<p class="cPoint">Computer:0</p>
+			<p class="pPoint">Player:0</p>
+			<img onclick="play('scissors')" src="https://wrpsa.com/wp-content/uploads/2021/08/scissors.png">
+			<img onclick="play('rock')" src="https://wrpsa.com/wp-content/uploads/2021/08/rock.png">
+			<img onclick="play('paper')" src="https://previews.123rf.com/images/julinzy/julinzy1310/julinzy131000180/23262904-hand-sign-of-rock-paper-scissors-game-isolated-vector-on-white-background.jpg">
+			<p class="pChoice">Player choice:</p>
+			<p class="cChoice">Computer choice:</p>
+			<p class="winner">Winner:</p>
+			<button onclick="restart()">restart</button>
+		</div>
+		<script src="task.js"></script>
+	</body>
+</html>
